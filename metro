@@ -1,0 +1,21 @@
+term shell
+for i in 1
+do
+echo
+echo "------- Router uptime + Gateway + BGP Status ------"
+show ver | grep -e uptime
+show ip route | in Gateway
+show bgp summ | tail 2
+echo "------- Tunnel + Interface Status ------"
+echo
+show ip int br | in Tunnel
+show int desc | grep -e ^Gi0/0*
+echo "------- PING Stats for sfnet ------"
+ping sfnet repeat 100 data FFFF size 1500
+echo
+echo "------- Gi0/0 Errors ------"
+echo 
+show int gi0/0 | in Last clearing
+show int gi0/0 | in errors
+show int gi0/0 | in Duplex
+done
