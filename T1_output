@@ -1,0 +1,20 @@
+term shell
+for i in 1
+do
+echo ""
+echo "------- Router uptime + BGP Status + Gateway ------"
+show ver | grep -e uptime
+show ip route | in Gateway
+show bgp summ | tail 2
+echo "------- Tunnel + Interface Status ------"
+show ip int br | grep -e ^Tunnel
+show int desc | grep -e ^Gi0/1
+echo "------- Bundle ------"
+echo ""
+sho ppp multi | in Member links
+sho ppp multi | in Se
+sho controllers t1 | in T1 0/0/0
+sho controllers t1 | section Total Data
+echo "------- PING Stats for sfnet ------"
+ping sfnet repeat 100 data FFFF size 1500
+done
