@@ -4,7 +4,7 @@ This is a readme for cisco trouble shooting repo
 
 These scripts are only for cisco equipment only, these scripts are to allow for quick and easy troubleshooting for metro ethernet and t1 circuit issues. The scripts will get the nessisary information and condence it into and easy to read output. 
 
-**bold text**First the output for the T1 script should look like this:
+** First the output for the T1 script should look like this: **
 
 ------- Router uptime + BGP Status + Gateway ------
 XXXXXXX uptime is 21 weeks, 4 days, 15 hours, 58 minutes
