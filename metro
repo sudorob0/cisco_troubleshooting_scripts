@@ -10,8 +10,8 @@ echo "------- Tunnel + Interface Status ------"
 echo
 show ip int br | in Tunnel
 show int desc | grep -e ^Gi0/0*
-echo "------- PING Stats for sfnet ------"
-ping sfnet repeat 100 data FFFF size 1500
+echo "------- PING Stats for google ------"
+ping google repeat 100 data FFFF size 1500
 echo
 echo "------- Gi0/0 Errors ------"
 echo 
