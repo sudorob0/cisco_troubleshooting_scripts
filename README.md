@@ -2,7 +2,7 @@
 
 This is a readme for cisco trouble shooting repo
 
-These scripts are only for cisco equipment only, these scripts are to allow for quick and easy troubleshooting for metro ethernet and t1 circuit issues. The scripts will get the necessary information and condense it into and easy to read output. 
+These scripts are only for cisco equipment only. These scripts are to allow for quick and easy troubleshooting for metro ethernet and t1 circuit issues. The scripts will get the necessary information and condense it into an easy to read output. 
 
 **First the output for the T1 script should look like the our put below** The uptime, bgp uptime and gatway are grouped together so you can compare the times and routes to look for bouncing. Then you can see what interfaces/ circuits are up and if they are taking errors. You also get ping response times.
 
